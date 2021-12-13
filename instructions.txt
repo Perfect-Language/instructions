@@ -1,0 +1,31 @@
+Vars :
+
+var -- create a new 8 bits variable with no type
+
+Ints :
+
+bit -- create a new 1 bit variable containing 0 or 1 but 0 by default
+int -- create a new 8 bits variable from -127 to 128
+unsigned int -- create a new 8 bits variable from 0 to 255
+medium int -- create a new 16 bits variable from -32767 to 32768
+medium unsigned int -- create a new 16 bits variable from 0 to 65535
+long int -- create a new 32 bits variable from -2147483647 to 2147483648
+long unsigned int -- create a new 32 bits variable from 0 to 4294967295
+
+Characters and strings :
+
+char -- create a new 8 bits variable who contain only 1 character
+char2 -- create a new 16 bits variable who contain only 2 characters
+char3 -- create a new 24 bits variable who contain only 3 characters
+char4 -- create a new 32 bits variable who contain only 4 characters
+char(x) -- create a new x bytes variable who contain x characters, maximum size : 1 MByte
+
+string -- create a new undefined size variable, maximum size : your entire ram
+
+Sockets :
+
+socket.socket() -- create a new socket using some options
+socket_name.ping("ip_address", "port") -- send a ping to a specified address and port socket via a socket
+socket_name.pings() -- modify a socket already existing as he or don't accept the pings from some other sockets
+socket_name.ipv4(0 or 1) -- modify a socket already existing and set it as ipv4 not accessible or accessible
+socket_name.ipv6(0 or 1) -- modify a socket already existing and set it as ipv6 not accessible or accessible
